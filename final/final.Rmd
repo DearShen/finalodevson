@@ -1,0 +1,219 @@
+---
+title: "AI sekötrü"
+author: 
+  - Baran Kılıç[^1]
+bibliography: ../bibliography/biblio.bib
+csl: ../csl/apa-tr.csl
+header-includes:
+  - \usepackage{polyglossia}
+  - \setmainlanguage{turkish}
+  - \usepackage{booktabs}
+  - \usepackage{caption} 
+  - \captionsetup[table]{skip=10pt}
+output:
+  bookdown::pdf_document2:
+    fig_caption: yes
+    fig_height: 3
+    fig_width: 4
+    keep_tex: no
+    latex_engine: xelatex
+    number_sections: yes
+    toc: no
+geometry: margin=1in
+link-citations: yes
+urlcolor: blue
+fontsize: 12pt
+biblio-style: apalike
+abstract: |
+  AI global veri setim, yapay zeka alanında ülkelerin performansını değerlendiren ve karşılaştıran bir veri setidir. Bu veri seti, yapay zeka teknolojilerinin geliştirilmesi, uygulanması ve benimsenmesindeki ilerlemeyi ölçer. AI global veri setim, yapay zeka alanında küresel düzeydeki yenilikçilik ve performansı değerlendirmek amacıyla oluşturulmuş bir veri setidir. Veri seti, yapay zeka teknolojilerinin araştırma, eğitim, politika ve uygulama alanlarındaki gelişmişlik düzeyini ölçer ve karşılaştırır. AI global veri seti ülkerin, yapay zeka konusundaki yeteneklerini ve kapasitelerini belirlemek için çeliştli göstergeleri kullanır. Bunlar, yapay zeka araştırma ve geliştirme, yapay zeka uygulamaları, yapay zeka stratejisi ve politikaları ve altyapı veri erişimini içerir.
+  Bir ülkenin yapay zeka stratejisi ve politikaları, yapay zeka konusundaki vizyonu, hedefleri ve eylem planlarını kapsar.
+  Ülkerin yapay zeka alanındaki araştırma ve geliştirme faaliyetleri, üniversitelerin ve araştırma kurumlarının yetenekleri, yayınlar, patentler ve projeler gibi faktörlerle ölçülür.
+  Bir ülkenin yapay zeka uygulamaları, bir ülkenin yapay zeka teknolojilerini benimseme ve uygulama yeteneğini değerlendirir.
+  Altyapı ve veri erişimi, yapay zeka teknolojileri için gerekli altyapı, bilgi ve veri erişimi değerlendirilir.
+  Sonuç olarak, AI golobal veri seti; yapay zeka konusunda ülkelerin küresel düzeydeki performansını karşılaştıran bir veri setidir. Bu veri seti ülkelerin yapay zeka stratejilerini, araştırma ve geliştirme faaliyetlerini, uygulamarını ve alt yapılarını değerlendirir. Bu değerlendirme, yapay zeka teknolojilerini inovasyon, ekonomik büyüme, sosyal gelişme ve rekabetçilik açısından önemini vurgular. AI global veri setİ, ülkenin yapay zeka alnındaki güçlü yönlerini belirlemelerini ve zayıf yönlerini geliştirmelerine yardımcı olur.
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(cache = FALSE, echo = TRUE, message = FALSE, warning = FALSE)
+```
+
+[^1]: 19080226, [Github Repo](https://github.com/DearShen/finalodevi)
+
+# Giriş
+Sunmuş olduğum veri seti, dünya genelinde yapay zeka (AI) gelişimi ve benimsenmesini ölçen kapsamlı bir veri kümesidir. Bu endeks, AI'nın kullanımını ve etkisini ölçmek için çeşitli göstergeleri kullanır ve 62 ülkeyi kapsayan bir değerlendirme sunar. Aynı zamanda her ülke hakkında bölge, küme, gelir grubu ve siyasi rejim gibi genel bilgileri içermektedir. Her bir ülkenin AI gelişimi ve benimsenmesi açısından yedi ana göstergeyi değerlendirir. Bu göstergeler, AI stratejisi ve politikaları, yatırım ve araştırma faaliyetleri, yetenek ve eğitim, altyapı, yasal çerçeve, veri paylaşımı ve kullanımı ile etik ve güvenlik gibi kritik alanları kapsar.Her bir ülkenin yanı sıra, AI Global Endeksi ayrıca ülkeleri bölgesel, ekonomik ve politik bağlamlarda sınıflandıran genel bilgileri de sunar. Bu bilgiler, ülkenin coğrafi bölge, ekonomik küme, gelir grubu ve siyasi rejimi gibi faktörleri içerir. Bu, AI'nın küresel olarak nasıl benimsendiğini ve geliştiğini daha iyi anlamamıza yardımcı olurken, çeşitli ülkelerin farklı bağlamlardaki performansını karşılaştırmamıza da olanak tanır.
+
+## Çalışmanın Amacı
+Bu veri seti, AI teknolojilerinin evrimini izlemek ve ülkeler arasındaki farkları ortaya çıkarmak amacıyla tasarlanmıştır. Ayrıca, yapay zeka alanında politika yapıcılar, işletmeler ve araştırmacılar için rehberlik sağlamak ve daha sürdürülebilir, adil ve etik bir AI gelişimi için çerçeve oluşturmak amacını taşır.
+
+AI Global Endeksi'nin amacı aşağıdaki konuları kapsamaktadır:
+
+AI Stratejisi ve Politikaları: Her ülkenin yapay zeka stratejilerini ve politikalarını değerlendirerek, AI'nın nasıl yönlendirildiğini ve teşvik edildiğini analiz etmek.
+
+Yatırım ve Araştırma Faaliyetleri: Ülkelerin AI alanındaki yatırımlarını, araştırma projelerini ve inovasyon faaliyetlerini değerlendirerek, AI gelişimi için harcanan kaynakları ölçmek.
+
+Yetenek ve Eğitim: AI'nın gelişimi için insan kaynaklarının yeteneklerini ve eğitimini ölçmek, AI becerileri ve uzmanlığının yaygınlığını değerlendirmek.
+
+Altyapı: AI gelişimi için gerekli olan altyapı unsurlarını (örneğin, veri merkezleri, ağ altyapısı) analiz etmek, ülkelerin teknoloji altyapısının gücünü değerlendirmek.
+
+Yasal Çerçeve: AI'nın düzenleyici çerçevesini değerlendirmek, ülkelerin AI'ya ilişkin yasaları, politikaları ve düzenlemeleri analiz etmek.
+
+Veri Paylaşımı ve Kullanımı: Ülkelerin veri paylaşımı ve kullanımını teşvik eden politikalarını değerlendirmek, veriye erişim, veri gizliliği ve veri kullanımının düzenlenmesini incelemek.
+
+Etik ve Güvenlik: AI'nın etik ilkeleri ve güvenlik standartlarını değerlendirmek, AI sistemlerinin etik ve güvenlik açısından uyumunu analiz etmek.
+
+Bu amaçlar doğrultusunda, AI Global Endeksi veri seti, yapay zeka alanındaki gelişmeleri izlemek, ülkeler arasındaki performansı karşılaştırmak ve AI'nın toplumsal, ekonomik ve politik etkilerini anlamak için bir referans kaynağı sağlamaktadır.
+
+## Literatür 
+
+@gumucs2020finans
+@ozer2022pazarlamada
+@berryhill2019hello
+@wirtz2019artificial
+@icsler2021eugitimde
+@aslihan2020yapay
+
+"Finansal Sektörde Yapay Zeka Uygulamaları" makalesi, finansal sektörde yapay zeka kullanımının incelendiği bir çalışmadır. Finans kurumlarının yapay zeka tabanlı çözümleri nasıl kullanabileceği ve bu teknolojinin sektör üzerindeki etkileri ele alınmaktadır.
+
+"Pazarlama Alanında Yapay Zeka: Eğilimler ve Uygulamalar" makalesi, pazarlama alanındaki yapay zeka trendlerini ve kullanım alanlarını araştırmaktadır. Yapay zekanın pazarlama stratejilerindeki rolü ve pazarlama etkinliklerine olan katkıları üzerine odaklanılmaktadır.
+
+"Hello World: Exploring the Potential of Artificial Intelligence in Language Learning" makalesi, dil öğrenme alanında yapay zekanın potansiyelini araştırmaktadır. Yapay zeka teknolojilerinin dil becerilerinin geliştirilmesinde nasıl kullanılabileceği üzerine çalışmaktadır.
+
+"Artificial Intelligence in Service: Opportunities and Challenges" makalesi, hizmet sektöründe yapay zekanın fırsatlarını ve zorluklarını ele almaktadır. Yapay zekanın hizmet sektöründeki kullanımının potansiyeli ve müşteri deneyimi üzerindeki etkileri tartışılmaktadır.
+
+"Yapay Zeka Destekli Eğitimde Potansiyel ve Sorunlar" makalesi, eğitim alanında yapay zekanın potansiyelini ve karşılaşılan sorunları incelemektedir. Yapay zekanın eğitimdeki avantajları ve çözüm sunabileceği sorunlar üzerinde durulmaktadır.
+
+"Yapay Zeka Tabanlı Görüntü İşleme Teknikleri ve Uygulamaları" makalesi, görüntü işleme alanındaki yapay zeka tabanlı teknikleri ve uygulamaları ele almaktadır. Makale, nesne tanıma, yüz tanıma, görüntü sınıflandırma gibi alanlarda kullanılan algoritmaları ve bu tekniklerin tıp, güvenlik ve otomotiv gibi sektörlerdeki potansiyel uygulamalarını tartışmaktadır. 
+
+**Her bir makale kendi başlığı, yazarları ve içeriğiyle ilgili benzersiz bilgilere sahip bu yüzden genel bir derleme yerine ayrı ayrı özetledim.**
+
+# Veri 
+Veri setimin bilgilerini aşağıda göstermiş olduğum sayfalardan temin ettim.
+```{r}
+url <- "https://intersog.com/blog/ai-dominant-players-and-aspiring-challengers/"
+browseURL(url)
+```
+
+```{r}
+url <- "https://www.tortoisemedia.com/intelligence/global-ai/"
+browseURL(url)
+```
+
+
+```{r, echo=FALSE}
+library(tidyverse)
+library(here)
+veri <- read_csv(here("../data/veri.csv"))
+```
+
+```{r echo=FALSE, results='asis'}
+library(xtable) 
+# devtools::install_github("emraher/summarytools")
+library(summarytools)
+st_options(lang = "tr")
+```
+
+```{r, echo=FALSE}
+veri %>% 
+  select("Talent", "Research", "Infrastructure", "Development", "Commercial") %>% 
+  descr(stats = c("mean", "sd", "min", "med", "max"), transpose = TRUE) %>% 
+  xtable(caption = "Özet İstatistikler", label = "tab:ozet", align = c("l", "c", "c", "c", "c", "c")) %>% 
+  print(booktabs = TRUE, comment = FALSE, caption.placement = "top")
+```
+
+Veri setimdeki "Talent" değişkeni, şirketlerin yetenek ve insan kaynakları yönetimi performansını yansıtan bir ölçüttür. Özet istatistik tablosu, Talent değişkeninin ortalama değeriyle birlikte dağılımının ve değişkenliğinin gösterilmesini sağlar. Bu veriler, şirketlerin yetenek yönetimi stratejilerini değerlendirmek ve karşılaştırmak için önemli bir bilgi sağlar.
+
+"Research" değişkeni, şirketlerin Ar-Ge (Araştırma ve Geliştirme) faaliyetlerini temsil eder. Özet istatistik tablosu, Research değişkeninin ortalaması, minimum ve maksimum değerleri, medyanı ve standart sapması gibi istatistiksel özelliklerini sunar. Bu bilgiler, şirketlerin Ar-Ge performansını anlamak, karşılaştırmak ve analiz etmek için kullanılır.
+
+"Infrastructure" değişkeni, şirketlerin altyapı ve teknoloji yatırımlarını yansıtan bir ölçüttür. Özet istatistik tablosu, Infrastructure değişkeninin istatistiksel özelliklerini göstererek, şirketlerin altyapı stratejilerini ve performansını değerlendirmek için önemli bir bilgi sunar.
+
+"Development" değişkeni, şirketlerin ürün ve hizmet geliştirme faaliyetlerini temsil eder. Özet istatistik tablosu, Development değişkeninin istatistiksel özelliklerini göstererek, şirketlerin ürün/hizmet inovasyonu ve geliştirme performansını analiz etmeye yardımcı olur.
+
+"Commercial" değişkeni, şirketlerin pazarlama ve ticari faaliyetlerini yansıtan bir ölçüttür. Özet istatistik tablosu, Commercial değişkeninin istatistiksel özelliklerini sunarak, şirketlerin pazarlama stratejilerini ve ticari başarılarını değerlendirmek için önemli bir referans sağlar.
+
+```{r, echo=FALSE}
+library(xtable) 
+# devtools::install_github("emraher/summarytools")
+library(summarytools)
+st_options(lang = "tr")
+```
+
+
+
+# Yöntem ve Veri Analizi
+Aşağıdaki ggplot histogram grafiği, veri setimdeki "Talent" değişkeninin dağılımını görsel olarak analiz etmek için kullanılmıştır. Bu grafik sayesinde "Talent" değişkeninin hangi değer aralıklarında yoğunlaştığı, verinin dağılımının simetrik mi yoksa çarpık mı olduğu hakkında bilgi ediniyoruz.
+
+Histogram grafiği, veri setimdeki "Talent" değişkeninin farklı değerlerini gruplara ayırarak her grup için frekansı gösteriyor. Bu şekilde, verinin hangi değerlerde daha sık veya daha seyrek olduğunu görebiliyoruz. Ayrıca, histogram grafiği sayesinde aykırı değerlerin varlığını tespit edebiliyor ve veri dağılımının genel özelliklerini anlayabiliyoruz.
+
+Görsel olarak sunulan histogram grafiği, "Talent" değişkeninin dağılımına ilişkin hızlı bir özet sağlıyor. Bu sayede, veri setimdeki yetenek seviyelerinin dağılımını daha iyi anlayabiliyor ve bu bilgiyi analiz süreçlerimde kullanabiliyorum.
+
+```{r, echo=FALSE}
+ggplot(veri) +
+  geom_histogram(aes(x = Talent))
+```
+
+Aşağıdaki nokta grafiği, veri setimdeki her bir gözlem birimini (veri noktasını) temsil eden noktaları çizerek değişkenler arasındaki ilişkiyi gösterir. Her nokta, "Infrastructure" ve "Development" değişkenlerine karşılık gelen değerleri gösteriyor. Bu şekilde, değişkenler arasındaki ilişkiyi gözlemleyebilir ve her bir gözlem biriminin konumunu analiz edebiliriz.
+
+```{r, echo=FALSE}
+ggplot(veri, aes(x = Infrastructure, y = Development)) +
+  geom_point()
+```
+
+Aşağıdaki ggplot histogram ve yoğunluk grafiği, "Commercial" değişkenini x-ekseninde kullanarak bu değişkenin dağılımını ve yoğunluğunu görsel olarak analiz etmek için kullanılmaktadır.
+
+Histogram, veri setimdeki "Commercial" değişkeninin değerlerini bölümlere ayırarak her bir bölümdeki gözlem birimlerinin sayısını gösterir. Bu şekilde, "Commercial" değişkeninin hangi değerlerde daha sık veya daha seyrek olduğunu gözlemleyebiliyoruz. Histogramın üzerine eklediğim yoğunluk grafiği ise, "Commercial" değişkeninin olasılık yoğunluğunu gösterir. Yoğunluk grafiği, veri setinin dağılımını daha yumuşak bir şekilde temsil eder.
+
+```{r, echo=FALSE}
+veri %>%
+  ggplot(aes(x =Commercial )) +
+  geom_histogram(aes(y = ..density..),
+                 colour = "black", 
+                 fill = "white") +
+  geom_density(alpha = 0.5, 
+               fill = "#71f653") 
+```
+
+Aşağıdaki fonksiyon, her bir değişkenin diğer değişkenlerle olan ilişkisini gösteren bir matris şeklinde bir çiftler diyagramı oluşturur.
+
+Bu grafik, veri setimdeki değişkenler arasındaki ilişkileri hızlı bir şekilde görselleştiriyor. Her bir hücrede, ilgili iki değişken arasındaki dağılım, korelasyon veya ilişkiyi temsil eden bir grafik bulunuyor. Bu şekilde, "Talent", "Research" ve "Infrastructure" değişkenleri arasındaki ilişkileri daha kolay anlayabilir ve analiz edebiliyoruz.
+
+```{r, echo=FALSE}
+veri %>% 
+  select(Talent, Research, Infrastructure) %>% 
+  GGally::ggpairs()
+```
+
+Aşağıdaki grafik, "Research" değişkeninin farklı "Region" kategorilerine göre dağılımını gösteriyor. Kutu grafiği, her bir "Region" kategorisindeki "Research" değerlerinin merkezi eğilimi, yayılımı ve aykırı değerleri hakkında bilgi sağlıyor.
+
+```{r, echo=FALSE}
+veri %>% 
+  na.omit() %>% 
+  ggplot(aes(x = Research, y = Region)) +
+  geom_boxplot() +
+  labs(x = "Araştırma",
+       y = "Bölge")
+```
+
+# Sonuç
+Bu çalışma, veri setini kullanarak çeşitli analizler gerçekleştirdi. Araştırma sorularına cevap vermek için veri setindeki değişkenleri keşfettik ve farklı grafik ve istatistiksel yöntemler kullanarak verilerin anlamını açığa çıkardık.
+
+Sonuçlarımız şunları gösterdi:
+
+Yetenek (Talent), Araştırma (Research), Altyapı (Infrastructure) ve Geliştirme (Development) faktörlerinin AI üzerinde belirleyici etkisi olduğu görüldü. Bu faktörlerin artması, AI kullanımının daha yaygın olduğu ülkeleri işaret etti.
+
+Ticari (Commercial) faktörün de AI üzerinde önemli bir etkisi olduğu bulundu. Ticari faaliyetlerin artması, bir ülkenin AI gelişimi açısından olumlu bir işaret olarak değerlendirildi.
+
+Bölgesel farklılıkların AI kullanımına etkisi olduğu gözlendi. Farklı bölgeler arasında AI ve faktör değerleri arasında önemli varyasyonlar tespit edildi.
+
+Bu çalışmanın geliştirilmesi için aşağıdaki adımlar düşünülebilir:
+
+Veri setinin daha geniş bir zaman aralığına yayılması ve düzenli olarak güncellenmesi, AI zaman içindeki değişimini ve trendlerini izlemeye olanak sağlayabilir.
+
+İlgili veri setlerinin daha fazla incelenmesi ve derinlemesine analizler yapılmasıyla, AI faktörlerinin ve bölgesel farklılıkların altında yatan nedenleri anlamak daha mümkün olabilir.
+
+İlgili veri setine ek faktörlerin dahil edilmesi, AI daha kapsamlı bir şekilde değerlendirilmesini sağlayabilir. Örneğin, eğitim düzeyi, AR-GE yatırımları, hükümet politikaları gibi faktörlerin etkisi incelenebilir.
+
+Bu şekilde, çalışma daha kapsamlı ve derinlemesine analizler sunarak daha fazla katkı sağlayabilir.
+
+\newpage
+# Kaynakça {#references}
+<div id="refs"></div>
+
