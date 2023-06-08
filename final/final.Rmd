@@ -36,7 +36,7 @@ abstract: |
 knitr::opts_chunk$set(cache = FALSE, echo = TRUE, message = FALSE, warning = FALSE)
 ```
 
-[^1]: 19080226, [Github Repo](https://github.com/DearShen/finalodevi)
+[^1]: 19080226, [Github Repo](https://github.com/DearShen/finalodevson)
 
 # Giriş
 Sunmuş olduğum veri seti, dünya genelinde yapay zeka (AI) gelişimi ve benimsenmesini ölçen kapsamlı bir veri kümesidir. Bu endeks, AI'nın kullanımını ve etkisini ölçmek için çeşitli göstergeleri kullanır ve 62 ülkeyi kapsayan bir değerlendirme sunar. Aynı zamanda her ülke hakkında bölge, küme, gelir grubu ve siyasi rejim gibi genel bilgileri içermektedir. Her bir ülkenin AI gelişimi ve benimsenmesi açısından yedi ana göstergeyi değerlendirir. Bu göstergeler, AI stratejisi ve politikaları, yatırım ve araştırma faaliyetleri, yetenek ve eğitim, altyapı, yasal çerçeve, veri paylaşımı ve kullanımı ile etik ve güvenlik gibi kritik alanları kapsar.Her bir ülkenin yanı sıra, AI Global Endeksi ayrıca ülkeleri bölgesel, ekonomik ve politik bağlamlarda sınıflandıran genel bilgileri de sunar. Bu bilgiler, ülkenin coğrafi bölge, ekonomik küme, gelir grubu ve siyasi rejimi gibi faktörleri içerir. Bu, AI'nın küresel olarak nasıl benimsendiğini ve geliştiğini daha iyi anlamamıza yardımcı olurken, çeşitli ülkelerin farklı bağlamlardaki performansını karşılaştırmamıza da olanak tanır.
